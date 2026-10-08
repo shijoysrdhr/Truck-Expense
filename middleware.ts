@@ -7,4 +7,4 @@ export async function middleware(req: NextRequest) {
   return NextResponse.redirect(new URL("/login", req.url));
 }
 
-export const config = { matcher: ["/((?!_next|favicon.ico|login|api/webhook).*)"] };
+export const config = { matcher: ["/((?!_next|favicon.ico|login|api/webhook|api/telegram).*)"] };
